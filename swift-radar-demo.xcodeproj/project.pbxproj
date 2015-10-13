@@ -12,7 +12,48 @@
 		C06314C21BCC770500C5AE13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C06314C01BCC770500C5AE13 /* Main.storyboard */; };
 		C06314C41BCC770500C5AE13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C06314C31BCC770500C5AE13 /* Assets.xcassets */; };
 		C06314C71BCC770500C5AE13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C06314C51BCC770500C5AE13 /* LaunchScreen.storyboard */; };
+		C06314FC1BCC7C9D00C5AE13 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C06314F91BCC7C9900C5AE13 /* Charts.framework */; };
+		C06314FD1BCC7C9D00C5AE13 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C06314F91BCC7C9900C5AE13 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C06315011BCC7F5100C5AE13 /* BalloonMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06315001BCC7F5100C5AE13 /* BalloonMarker.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C06314F81BCC7C9900C5AE13 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C06314F31BCC7C9900C5AE13 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5BA8EC401A9D14DC00CE82E1;
+			remoteInfo = Charts;
+		};
+		C06314FA1BCC7C9900C5AE13 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C06314F31BCC7C9900C5AE13 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A52C5C371BAC5CA400594CDD;
+			remoteInfo = ChartsTV;
+		};
+		C06314FE1BCC7C9D00C5AE13 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C06314F31BCC7C9900C5AE13 /* Charts.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BA8EC3F1A9D14DC00CE82E1;
+			remoteInfo = Charts;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C06314F21BCC7C5B00C5AE13 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C06314FD1BCC7C9D00C5AE13 /* Charts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C06314B91BCC770500C5AE13 /* swift-radar-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-radar-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +63,9 @@
 		C06314C31BCC770500C5AE13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C06314C61BCC770500C5AE13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C06314C81BCC770500C5AE13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C06314CE1BCC772C00C5AE13 /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Header.h; path = ../Header.h; sourceTree = "<group>"; };
+		C06314F31BCC7C9900C5AE13 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "swift-radar-demo/Charts/Charts.xcodeproj"; sourceTree = "<group>"; };
+		C06315001BCC7F5100C5AE13 /* BalloonMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalloonMarker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C06314FC1BCC7C9D00C5AE13 /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +83,7 @@
 		C06314B01BCC770500C5AE13 = {
 			isa = PBXGroup;
 			children = (
+				C06314F31BCC7C9900C5AE13 /* Charts.xcodeproj */,
 				C06314BB1BCC770500C5AE13 /* swift-radar-demo */,
 				C06314BA1BCC770500C5AE13 /* Products */,
 			);
@@ -54,7 +100,9 @@
 		C06314BB1BCC770500C5AE13 /* swift-radar-demo */ = {
 			isa = PBXGroup;
 			children = (
+				C06314CE1BCC772C00C5AE13 /* Header.h */,
 				C06314BC1BCC770500C5AE13 /* AppDelegate.swift */,
+				C06315001BCC7F5100C5AE13 /* BalloonMarker.swift */,
 				C06314BE1BCC770500C5AE13 /* ViewController.swift */,
 				C06314C01BCC770500C5AE13 /* Main.storyboard */,
 				C06314C31BCC770500C5AE13 /* Assets.xcassets */,
@@ -62,6 +110,15 @@
 				C06314C81BCC770500C5AE13 /* Info.plist */,
 			);
 			path = "swift-radar-demo";
+			sourceTree = "<group>";
+		};
+		C06314F41BCC7C9900C5AE13 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C06314F91BCC7C9900C5AE13 /* Charts.framework */,
+				C06314FB1BCC7C9900C5AE13 /* ChartsTV.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,10 +131,12 @@
 				C06314B51BCC770500C5AE13 /* Sources */,
 				C06314B61BCC770500C5AE13 /* Frameworks */,
 				C06314B71BCC770500C5AE13 /* Resources */,
+				C06314F21BCC7C5B00C5AE13 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C06314FF1BCC7C9D00C5AE13 /* PBXTargetDependency */,
 			);
 			name = "swift-radar-demo";
 			productName = "swift-radar-demo";
@@ -109,12 +168,35 @@
 			mainGroup = C06314B01BCC770500C5AE13;
 			productRefGroup = C06314BA1BCC770500C5AE13 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C06314F41BCC7C9900C5AE13 /* Products */;
+					ProjectRef = C06314F31BCC7C9900C5AE13 /* Charts.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				C06314B81BCC770500C5AE13 /* swift-radar-demo */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		C06314F91BCC7C9900C5AE13 /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = C06314F81BCC7C9900C5AE13 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C06314FB1BCC7C9900C5AE13 /* ChartsTV.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ChartsTV.framework;
+			remoteRef = C06314FA1BCC7C9900C5AE13 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		C06314B71BCC770500C5AE13 /* Resources */ = {
@@ -134,12 +216,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C06315011BCC7F5100C5AE13 /* BalloonMarker.swift in Sources */,
 				C06314BF1BCC770500C5AE13 /* ViewController.swift in Sources */,
 				C06314BD1BCC770500C5AE13 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C06314FF1BCC7C9D00C5AE13 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Charts;
+			targetProxy = C06314FE1BCC7C9D00C5AE13 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C06314C01BCC770500C5AE13 /* Main.storyboard */ = {
@@ -246,10 +337,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "swift-radar-demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.geleichen.swift-radar-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = Header.h;
 			};
 			name = Debug;
 		};
@@ -257,10 +350,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "swift-radar-demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.geleichen.swift-radar-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = Header.h;
 			};
 			name = Release;
 		};
@@ -283,6 +378,7 @@
 				C06314CD1BCC770500C5AE13 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
